@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LA.css">
+    <title>Leave Application</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="lp1">
+        <div class="nvl1">
+            <nav>
+                <ul id="MI1">
+                    <li><button class="loginbtn" onclick="document.getElementById('lf1').style.display='block'" style="width: auto;">HOME</button></li>
+                </ul>
+            </nav>
+            <!--navigation bar is finished -->
+        </div>
+        
+        <!-- Leave Application Form Container -->
+        <div id="lf1" class="LA Page">
+            <form action="applyleave.php" method="POST">
+                <div class="LA1">
+                    <h3>Leave Application Form</h3>
+                </div>
+                
+                
+                <!-- Type of Leave Section -->
+                <div class="TOL">
+                    <label for="leave-type">Type of Leave:</label>
+                    <div>
+                        <input type="radio" value="CL" name="Leave" required> Casual Leave
+                        <input type="radio" value="EL" name="Leave" required> Earned Leave
+                        <input type="radio" value="SL" name="Leave" required> Sick Leave
+                        <input type="radio" value="OD" name="Leave" required> On-Duty Leave
+                        <input type="radio" value="CCL" name="Leave" required> Child-Care Leave
+                    </div>
+                </div>
+                
+                <!-- Leave Start Date -->
+                <div class="LSD">
+                    <label for="start-date">Leave Start Date:</label>
+                    <input type="date" id="start-date" name="start_date" required>
+                </div>
+                
+                <!-- Leave End Date -->
+                <div class="LED">
+                    <label for="end-date">Leave End Date:</label>
+                    <input type="date" id="end-date" name="end_date" required>
+                </div>
+                
+                <!-- Reason for Leave -->
+                <div class="Reason">
+                  <label for="reason">Reason:</label>
+                  <textarea id="reason" name="reason" rows="20" cols="90" required>Reason for Leave:</textarea>
+              </div>
+                <!-- Available Leave Balance -->
+                <div class="ALB">
+                    <label for="leave-balance">Available Leave Balance:</label>
+                    <input type="number" id="leave-balance" name="leave_balance" placeholder="Remaining leave balance" required>
+                </div>
+                
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

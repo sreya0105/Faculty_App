@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Page Container */
+.lp1 {
+    height: 110vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.04), rgba(0,0,0,0.04)), url(images/image2.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 40px;
+    text-align: center;
+}
+
+.lp1 #lf1 {
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    border: 3px solid #000000; /* Deep black border */
+    width: 1050px;
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 25px;
+    opacity: 1;
+}
+
+.LA1 {
+    line-height: 25px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.TOL, .LSD, .LED, .Reason, .ALB {
+    line-height: 25px;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    text-align: justify;
+    background: transparent;
+}
+
+/* Navigation Bar */
+.nvl1 {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: fixed; /* Fix navbar to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    background: rgba(0,0,0,0.3); /* Semi-transparent background for navbar */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.nvl1 nav {
+    flex: 1;
+    text-align: left;
+}
+
+.nvl1 nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.nvl1 nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.nvl1 nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.nvl1 nav ul li button {
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+/* Remove bullets from the radio button list */
+.TOL div {
+    list-style-type: none; /* This removes the bullets */
+    padding-left: 0;
+}
+
+.TOL input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Button Styles */
+button {
+    background-color: grey;
+    color: black;
+    padding: 8px 16px; /* Reduced padding for smaller size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Changed from 100% to auto to make the button smaller */
+    font-size: 14px; /* Reduced font size */
+}
+
+button:hover {
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+    button {
+        font-size: 12px; /* Further reduce button size on smaller screens */
+        padding: 6px 12px;
+    }
+}

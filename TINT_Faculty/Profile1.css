@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Page Container */
+.lp1 {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/image2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    color: white;
+}
+
+.lp1 #lf1 {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #000;
+    width: 90%;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #f4f4f4;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Smaller Submit Button */
+button {
+    background-color: grey;
+    color: black;
+    padding: 8px 16px; /* Reduced padding for smaller size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Changed from 100% to auto to make the button smaller */
+    font-size: 14px; /* Reduced font size */
+}
+
+button:hover {
+    background-color: white;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .lp1 #lf1 {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        max-width: none;
+    }
+
+    button {
+        font-size: 12px; /* Further reduce button size on smaller screens */
+        padding: 6px 12px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+}
+.picture-upload {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.picture-upload label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.picture-upload input[type="file"] {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 400px;
+}

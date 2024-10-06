@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TINT FACULTY LOGIN</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+		<div class="lp1"><!--full page-->
+			<div class="nvl1">
+				<nav>
+					<ul id="MI1">
+						<li><a href="#">CONTACT</a></li>
+						<li><button class="loginbtn" onclick="document.getElementById('lf1').style.display='block' " style="width: auto;">LOGIN</button>
+						</li>
+					</ul>
+				</nav>
+				<!--navigation bar is finished -->
+			</div>
+			<!--login form start-->
+			<div id="lf1" class="login-page">
+				<div id="tt1">
+            		<i class="material-icons lock">lock</i> Login
+        		</div>
+				<form>
+            		<div class="input">
+                		<div class="input-addon">
+                    		<i class="material-icons">face</i>
+                    		<input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+                		</div>
+            		</div>
+					<div class="clearfix"></div>
+					<div class="input">
+                		<div class="input-addon">
+                    		<i class="material-icons">vpn_key</i>
+							<input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+                		</div>
+            		</div>
+            		<br>
+            		<div class="user-type">
+						<label>
+							<input type="radio" name="user_type" value="student" required>
+							Student
+						</label>
+						<label>
+							<input type="radio" name="user_type" value="faculty" required>
+							Faculty
+						</label>
+					</div>
+					<div class="remember-me">
+                		<input type="checkbox">
+                		<span style="color: #DDD">Remember Me</span>
+            		</div>
+					<input id="login" type="submit" value="Log In" />
+        		</form>
+				<div class="forgot-password">
+            		<a href="forgot_password.html">Forgot your password?</a>
+        		</div>
+        	</div>
+		</div>
+		
+	
+</body>
+</html>
